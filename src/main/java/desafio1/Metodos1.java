@@ -2,7 +2,7 @@ package desafio1;
 
 import java.util.*;
 
-public class metodos {
+public class Metodos1 {
     private static Scanner scan = new Scanner(System.in);
     private static Integer numeroMaxLinhas;
     private static Integer numeroDeLinhas = 1;

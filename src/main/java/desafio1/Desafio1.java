@@ -1,6 +1,6 @@
 package desafio1;
 
-import static desafio1.metodos.*;
+import static desafio1.Metodos1.*;
 
 public class Desafio1 {
 
