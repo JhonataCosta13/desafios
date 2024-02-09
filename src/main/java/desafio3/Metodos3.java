@@ -17,12 +17,10 @@ public class Metodos3 {
         Integer diferenca1;
         Integer diferenca2;
         for (int i = 0; i < arr.length ; i++){
-            for(int j = 0; j < arr.length; j++){
-                if(j > i){
-                    diferenca1 = arr[i] - arr[j];
-                    diferenca2 = arr[j] - arr[i];
-                    if(diferenca1 == k || diferenca2 == k)numeroPares++;
-                }
+            for(int j = i + 1; j < arr.length; j++){
+                diferenca1 = arr[i] - arr[j];
+                diferenca2 = arr[j] - arr[i];
+                if(diferenca1 == k || diferenca2 == k)numeroPares++;
             }
         }
         return numeroPares;
