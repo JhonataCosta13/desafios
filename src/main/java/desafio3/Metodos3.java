@@ -14,11 +14,15 @@ public class Metodos3 {
 
     public static Integer paresDiferenca(Integer arr[], Integer k){
         Integer numeroPares = 0;
-        Integer diferenca;
-        for (int i = 0; i < arr.length - 1; i++){
-            diferenca = arr[i+1] - arr[i];
-            if (diferenca == k){
-                numeroPares++;
+        Integer diferenca1;
+        Integer diferenca2;
+        for (int i = 0; i < arr.length ; i++){
+            for(int j = 0; j < arr.length; j++){
+                if(j > i){
+                    diferenca1 = arr[i] - arr[j];
+                    diferenca2 = arr[j] - arr[i];
+                    if(diferenca1 == k || diferenca2 == k)numeroPares++;
+                }
             }
         }
         return numeroPares;
