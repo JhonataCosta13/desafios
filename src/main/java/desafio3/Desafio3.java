@@ -1,6 +1,6 @@
 package desafio3;
-import java.util.Scanner;
 
+import java.util.Scanner;
 import static desafio3.Metodos3.*;
 public class Desafio3 {
     public static void main(String[] args) {

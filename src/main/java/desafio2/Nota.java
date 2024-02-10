@@ -1,5 +1,6 @@
 package desafio2;
 
+import java.util.Locale;
 import java.util.Scanner;
 import static desafio2.Moeda.definirDecimal;
 
@@ -16,6 +17,7 @@ public class Nota {
 
     public static void definirValorMonetario(){
         System.out.println("Digite o valor monetário:");
+        scan.useLocale(Locale.US);
         valorMonetario = scan.nextDouble();
     }
 
